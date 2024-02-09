@@ -16,17 +16,26 @@
 .round {
     border-radius: 20px;
 }
+
 .blue {
     background-color: var(--blue);
 }
 .pink {
     background-color: var(--pink);
 }
+.navy {
+    background-color: var(--navy);
+}
 
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /* Banner */
-#banner-img {
-    opacity: 0.2;
+#banner {
+    object-fit: cover;
+    background-image: url("/resources/murals/mural1.png");
 }
 #banner-text {
     font-size: 8rem;
@@ -36,5 +45,14 @@
 #navbar {
     gap: 15px;
     flex-wrap: wrap;
-    justify-content:space-around;
+    /* justify-content:space-around; */
+}
+
+/* About */
+#about-left {
+    width: 60%;
+}
+#about-right {
+    aspect-ratio: 1/1;
+    height: 50vh;
 }
