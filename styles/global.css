@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+:root {
+    --text: #210202;
+    --background: #ffffff;
+    
+    --navy: #21244D;
+    --purple: #4A26AB;
+    --fuchsia: #9543A7;
+    --pink: #E350A8;
+    --blue: #B8E7EA;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+    --font-scale: 1.333;
+    --p: 1rem;
+    --h5: calc(var(--p) * var(--font-scale));
+    --h4: calc(var(--h5) * var(--font-scale));
+    --h3: calc(var(--h4) * var(--font-scale));
+    --h2: calc(var(--h3) * var(--font-scale));
+    --h1: calc(var(--h2) * var(--font-scale));
+}
+
+/* sets text highlight color to the var(--accent) color */
+::selection {
+    background-color: var(--accent);
+}
+
+/* removes default margin from 'body' element */
+body {
+    margin: 0;
+    background-color: var(--background);
+}
+
+
+/* sets the font size of each text element */
+p {
+    font-size: var(--p);
+}
+h1 {
+    font-size: var(--h1);
+}
+h2 {
+    font-size: var(--h2);
+}
+h3 {
+    font-size: var(--h3);
+}
+h4 {
+    font-size: var(--h4);
+}
+h5 {
+    font-size: var(--h5);
+}
+
+/* makes image dragging impossible among all [modern] browsers */
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+section {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+button {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: var(--h4);
+}
+button:hover {
+    cursor: pointer;
+}

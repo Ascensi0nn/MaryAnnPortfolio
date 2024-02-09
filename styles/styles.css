@@ -1,0 +1,40 @@
+.vertical {
+    flex-direction: column;
+}
+.horizontal {
+    flex-direction: row;
+}
+.small {
+    width: 50vw;
+}
+.large {
+    width: 100vw;
+}
+.absolute {
+    position: absolute;
+}
+.round {
+    border-radius: 20px;
+}
+.blue {
+    background-color: var(--blue);
+}
+.pink {
+    background-color: var(--pink);
+}
+
+
+/* Banner */
+#banner-img {
+    opacity: 0.2;
+}
+#banner-text {
+    font-size: 8rem;
+}
+
+/* Navbar */
+#navbar {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
