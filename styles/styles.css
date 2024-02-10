@@ -35,10 +35,11 @@
 /* Banner */
 #banner {
     object-fit: cover;
-    background-image: url("/resources/murals/mural1.png");
+    background-image: url("/resources/about/banner.png");
 }
 #banner-text {
     font-size: 8rem;
+    filter: drop-shadow(5px 5px 0px white);
 }
 
 /* Navbar */
@@ -55,4 +56,31 @@
 #about-right {
     aspect-ratio: 1/1;
     height: 50vh;
+}
+
+/* DRAWINGS */
+#drawings-holder {
+    overflow-x: hidden;
+    background-color: var(--blue);
+}
+
+.drawings {
+    aspect-ratio: 1;
+    min-width: 200px;
+    max-width: 20%;
+    object-fit: cover;
+}
+.drawings:hover {
+    cursor: pointer;
+}
+
+.open {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    max-width: 90vw;
+    max-height: 90vh;
+    aspect-ratio: auto;
 }
