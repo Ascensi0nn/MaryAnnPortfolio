@@ -4,6 +4,9 @@
 .horizontal {
     flex-direction: row;
 }
+.even {
+    justify-content: space-evenly;
+}
 .small {
     width: 50vw;
 }
@@ -27,9 +30,22 @@
     background-color: var(--navy);
 }
 
+.sofia {
+    font-family: 'Sofia', cursive;
+}
+.mali {
+    font-family: 'Mali', cursive;
+}
+
 .image {
     max-width: 100%;
     max-height: 100%;
+}
+.rotateL {
+    transform: rotateZ(-5deg);
+}
+.rotateR {
+    transform: rotateZ(5deg);
 }
 
 /* Banner */
@@ -51,19 +67,23 @@
 
 /* About */
 #about-left {
-    width: 60%;
+    width: 30%;
 }
 #about-right {
-    aspect-ratio: 1/1;
     height: 50vh;
+    background-color: var(--pink);
+    padding: 20px;
+}
+#Hello {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 6rem;
 }
 
 /* DRAWINGS */
 #drawings-holder {
     overflow-x: hidden;
-    background-color: var(--blue);
 }
-
 .drawings {
     aspect-ratio: 1;
     min-width: 200px;
@@ -73,7 +93,6 @@
 .drawings:hover {
     cursor: pointer;
 }
-
 .open {
     position: fixed;
     top: 50%;
@@ -83,4 +102,5 @@
     max-width: 90vw;
     max-height: 90vh;
     aspect-ratio: auto;
+    filter: drop-shadow(0px 0px 15px black);
 }
