@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@600&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 :root {
     --text: #210202;
     --background: #ffffff;
     
-    --navy: #21244D;
-    --purple: #4A26AB;
-    --fuchsia: #9543A7;
-    --pink: #E350A8;
+    --navy: #252964;
+    --purple: #361f75;
+    --dark-purple: #423368;
+    --light-purple: #846fc0;
     --blue: #B8E7EA;
 
     font-family: 'Montserrat', sans-serif;
@@ -32,7 +33,7 @@
 /* removes default margin from 'body' element */
 body {
     margin: 0;
-    background-color: var(--background);
+    background-color: var(--purple);
 }
 
 

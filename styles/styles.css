@@ -23,11 +23,14 @@
 .blue {
     background-color: var(--blue);
 }
-.pink {
-    background-color: var(--pink);
+.light-purple {
+    background-color: var(--light-purple);
 }
 .navy {
     background-color: var(--navy);
+}
+.dark-purple {
+    background-color: var(--dark-purple);
 }
 
 .sofia {
@@ -48,14 +51,45 @@
     transform: rotateZ(5deg);
 }
 
+.holders {
+    margin-top: 10vh;
+}
+.text-box {
+    background-color: var(--light-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blob {
+    z-index: -1;
+    position: relative;
+    transform: scale(125%);
+}
+#blob-holder {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+}
+.padding {
+    padding: 20px;
+}
+.ninety {
+    width: 90%;
+}
+
 /* Banner */
 #banner {
     object-fit: cover;
-    background-image: url("/resources/about/banner.png");
 }
 #banner-text {
     font-size: 8rem;
-    filter: drop-shadow(5px 5px 0px white);
+    color: white;
+    filter: drop-shadow(5px 5px 0px black);
+    font-family: 'Luckiest Guy', cursive;
 }
 
 /* Navbar */
@@ -64,14 +98,22 @@
     flex-wrap: wrap;
     /* justify-content:space-around; */
 }
+#navbar button{
+    background-color: var(--navy);
+    color: rgb(219, 219, 219);
+}
+#navbar button:hover{
+    color: white;
+}
 
 /* About */
 #about-left {
     width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #about-right {
     height: 50vh;
-    background-color: var(--pink);
     padding: 20px;
 }
 #Hello {
@@ -82,7 +124,8 @@
 
 /* DRAWINGS */
 #drawings-holder {
-    overflow-x: hidden;
+    padding: 0;
+    gap: 10px;
 }
 .drawings {
     aspect-ratio: 1;
@@ -90,8 +133,17 @@
     max-width: 20%;
     object-fit: cover;
 }
+.drawinz {
+    aspect-ratio: 2/1;
+    max-width: 410px;
+    min-width: calc(40% + 10px);
+    background-color: var(--light-purple);
+}
 .drawings:hover {
     cursor: pointer;
+}
+.drawings:hover:not(.open) {
+    transform: scale(110%);
 }
 .open {
     position: fixed;
@@ -103,4 +155,56 @@
     max-height: 90vh;
     aspect-ratio: auto;
     filter: drop-shadow(0px 0px 15px black);
+}
+
+/* MURALS */
+#murals-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#mural-left {
+    width: 30vw;
+    transform: translateY(10vh);
+}
+#mural-right {
+    padding: 20px;
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* SKETCHES */
+#sketches-holder {
+    overflow-x: hidden;
+    padding: 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* PHOTOGRAPHY */
+#photography-holder {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+#photography-left {
+    width: 30vw;
+    transform: translateY(10vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#photography-right {
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* POSTERS */
+#posters-holder {
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
 }

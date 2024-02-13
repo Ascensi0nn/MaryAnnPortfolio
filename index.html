@@ -14,24 +14,24 @@
 </head>
 <body>
     <!-- Header / banner -->
-    <section class="vertical" id="banner">
+    <section class="vertical" id="banner" style="background-image: url(resources/about/banner.png);">
         <h1 id="banner-text">MARY's PORTFOLIO</h1>
     </section>
 
     <!-- Navbar -->
     <section class="navy horizontal" id="navbar">
-        <button class="round blue">ABOUT</button>
-        <button class="round blue">ARTWORKS</button>
-        <button class="round blue">MURALS</button>
-        <button class="round blue">SKETCHES</button>
-        <button class="round blue">PHOTOGRAPHY</button>
-        <button class="round blue">POSTERS</button>
-        <button class="round blue">Information</button>
+        <button class="round mali" id="about">ABOUT</button>
+        <button class="round mali" id="drawings">DRAWINGS</button>
+        <button class="round mali" id="murals">MURALS</button>
+        <button class="round mali" id="sketches">SKETCHES</button>
+        <button class="round mali" id="photography">PHOTOGRAPHY</button>
+        <button class="round mali" id="posters">POSTERS</button>
+        <button class="round mali" id="information">INFORMATION</button>
     </section>
 
     <!-- ABOUT -->
-    <section class="even horizontal">
-        <div id="about-left" class="round">
+    <section id="about-holder" class="even horizontal holders">
+        <div id="about-left" class="round light-purple text-box">
             <h1 class="sofia" id="Hello">Hello!</h1>
             <h2 class="mali rotateL">I'M <u>MARY ANN</u> JACOB</h2>
             <h5 class="rotateR">
@@ -39,18 +39,63 @@
             </h5>
         </div>
         
-        <div id="about-right" class="img-holder round">
+        <div id="about-right" class="img-holder round dark-purple">
             <img class="image" src="resources/about/about1.JPEG">
+            <img class="image" src="resources/about/about3.JPEG">
         </div>
-        
     </section>
     
     <!-- DRAWINGS -->
-    <section id="drawings-holder"></section>
+    <section id="drawings-holder" class="holders">
+        <div class="drawinz round text-box">
+            <h2 class="mali">DRAWINGS</h2>
+            <h4 class="ninety">Here are some of my drawings!!! All styles, across many many years</h4>
+        </div>
+    </section>
 
     <!-- MURALS -->
-    <section id="murals-holder"></section>
+    <section id="murals-holder" class="even horizontal holders">
+        <div id="mural-left" class="round light-purple text-box padding">
+            <h1 class="mali">MURALS</h1>
+            <h5>
+                This is part of my high school years... I spent 600 days on this bitch, it was my life!
+            </h5>
+        </div>
+        <div id="mural-right" class="image-holder round light-purple">
+            <img class="image" src="resources/murals/mural1.png">
+            <img class="image" src="resources/murals/mural1.png">
+            <img class="image" src="resources/murals/mural1.png">
+        </div>
+    </section>
+
+    <!-- SKETCHES -->
+    <section id="sketches-holder" class="holders">
+        <div class="drawinz round text-box">
+            <h2 class="mali">SKETCHES</h2>
+            <h4 class="ninety">Here are some of my sketches!!! All styles, across many many years... this shit slaps gurlll</h4>
+        </div>
+    </section>
+
+    <!-- PHOTOGRAPHY -->
+    <section id="photography-holder" class="even horizontal holders">
+        <div id="photography-left" class="round light-purple padding">
+            <h1 class="mali">PHOTOGRAPHY</h1>
+            <h5>
+                I just recently got into photography, and I love it!! Here are some of my nudes *tongue out emoji*
+            </h5>
+        </div>
+        <div id="photography-right" class="image-holder round dark-purple padding">
+            <img class="image" src="resources/photography/photography1.png">
+            <img class="image" src="resources/photography/photography1.png">
+            <img class="image" src="resources/photography/photography1.png">
+        </div>
+    </section>
+
+    <div id="blob-holder"></div>
+
+
 
     <script src="scripts/add_images.js"></script>
+    <script src="scripts/scroll.js"></script>
 </body>
 </html>
