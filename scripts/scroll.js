@@ -10,4 +10,4 @@ scrollView('murals', 'murals-holder');
 scrollView('sketches', 'sketches-holder');
 scrollView('photography', 'photography-holder');
 scrollView('posters', 'posters-holder');
-// scrollView('about', 'about-holder');
+scrollView('information', 'information-holder');

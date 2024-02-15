@@ -1,11 +1,17 @@
 .vertical {
+    display: flex;
     flex-direction: column;
 }
 .horizontal {
+    display: flex;
     flex-direction: row;
 }
 .even {
     justify-content: space-evenly;
+}
+.center {
+    justify-content: center;
+    text-align: center;
 }
 .small {
     width: 50vw;
@@ -25,6 +31,9 @@
 }
 .light-purple {
     background-color: var(--light-purple);
+}
+.purple {
+    background-color: var(--purple);
 }
 .navy {
     background-color: var(--navy);
@@ -77,6 +86,15 @@
 .padding {
     padding: 20px;
 }
+.padding-sm {
+    padding: 10px;
+}
+.margin {
+    margin: 20px;
+}
+.margin-sm {
+    margin: 10px;
+}
 .ninety {
     width: 90%;
 }
@@ -96,7 +114,7 @@
 #navbar {
     gap: 15px;
     flex-wrap: wrap;
-    /* justify-content:space-around; */
+    justify-content: space-around;
 }
 #navbar button{
     background-color: var(--navy);
@@ -108,7 +126,7 @@
 
 /* About */
 #about-left {
-    width: 30%;
+    width: 50%;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -138,6 +156,7 @@
     max-width: 410px;
     min-width: calc(40% + 10px);
     background-color: var(--light-purple);
+    
 }
 .drawings:hover {
     cursor: pointer;
@@ -174,10 +193,12 @@
     flex-direction: column;
     gap: 15px;
 }
+#wolf-box {
+    position: absolute;
+}
 
 /* SKETCHES */
 #sketches-holder {
-    overflow-x: hidden;
     padding: 0;
     gap: 10px;
     display: flex;
@@ -206,5 +227,13 @@
 
 /* POSTERS */
 #posters-holder {
-    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+    gap: 10px
+}
+
+/* INFORMATION */
+.links {
+    display: grid;
+}   
+.link-logo {
+    max-height: 10vh;
 }
